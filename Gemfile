@@ -9,6 +9,7 @@ require File.expand_path('spec/support/detect_rails_version', ACTIVE_ADMIN_PATH)
 rails_version = detect_rails_version
 if rails_version == "3.2.21"
   gem 'rails', github: "rails", branch: "3-2-stable"
+  gem 'test-unit', '~> 3.0'
 else
   gem 'rails', rails_version
 end
